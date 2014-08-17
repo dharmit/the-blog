@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Welcome to THE Blog!</title>
+        {% endif %}
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|PT+Sans:400,700|Ubuntu:300,400|Lobster|Shadows+Into+Light|Open+Sans|Montserrat' rel='stylesheet' type='text/css'> 
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="/static/css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <!-- This section is for the top navigation bar -->
+        <div class="nav">
+            <div class="container">
+                <ul class="nav nav-pills pull-left">
+                    <li class="active"><a href="#"><h2>THE Blog!</h2></a></li>
+                </ul>
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="login">Login</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- This is the block content section -->
+        {% block content %} {% endblock %}
+
+    </body>
+</html>

@@ -1,0 +1,146 @@
+/*----------------------------------------------------------- Global Common Stuff ------------------------------------------------------*/
+
+p{  
+    font-family: "Arvo";
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+p:hover{
+    font-size: 25px;
+}
+
+h3{
+    font-family: "PT Sans";
+    margin-top: 5px;
+    font-size: 3em;
+}
+
+h3:hover{
+    color:#66CCFF;
+    font-weight:bold;
+}
+img{
+    max-height:250px;
+    max-width:200px;
+    margin-top: 5px;
+}
+
+/*--------------------------------------------------------- End Global Common Stuff ------------------------------------------------------*/
+
+
+/* CSS for navigation bar created using "nav" & "nav-pills" */
+
+.nav .container ul li {
+    display: inline;
+    background-color: #ffffff;
+}
+.nav > .container > ul > li > a{
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #B2B2B2;
+}
+.nav > .container > .pull-right > li > a{
+    margin-top: 25px;
+}
+.nav > .container > ul > li > a:hover{
+    color: #000000;
+    background-color:#66CCFF;
+}
+
+/* CSS for the jumbotron part */
+
+.container > .jumbotron{
+    height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+}
+.container > .jumbotron > h1{
+    font-family: 'Lobster';
+    font-size: 6em;;
+    color: #66CCFF;
+    margin: auto;
+}
+.container > .jumbotron > p, pre{
+    margin-top: 10px;
+    display: inline;
+}
+
+/* CSS for id synop and class container. Basically for SYNOPSIS */
+/* NOTE : "#synop > .row > .col-md-3 > img" and "#synop > .row > .col-md-9 > h3" have same margin-top value. Couldn't figure out a way to avoid this repetation.
+
+/* This is for entire container spanning over both the col-md-3 and col-md-9 */
+#synop.container{
+    /*background-color:#336699;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+/* This is for the image we are putting in col-md-3 */
+
+#synop > .row > .col-md-3 > img{
+    margin-top: 5px;
+}
+
+/* This is for overall col-md-9. It affects both <h3> and <p> tags in it. */
+
+#synop > .row > .col-md-9{
+    text-align: right;
+}
+
+/* This is similar for h3 in col-md-9 and img in col-md-3 */
+
+#synop > .row > .col-md-9 > h3{
+    float:right
+}
+#synop > .row > .col-md-9 > p{
+    float: right;
+}
+
+
+/* CSS for id fin_proj and class container. Basically for FINAL YEAR PROJECT */
+/* NOTE : "#fin_proj > .row > .col-md-3 > h3" and "#fin_proj > .row > .col-md-9 > img" have same margin-top value. Couldn't figure out a way to avoid this repetation. */
+
+#fin_proj.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+#fin_proj > .row > .col-md-3 > img{
+    float: right;
+    margin-top: 5px;
+}
+#fin_proj > .row > .col-md-9 > h3{
+    margin-top: 5px;
+    float: left;
+} 
+
+#fin_proj > .row > .col-md-9 > p{
+    float: left;
+}
+
+/* CSS for id "visit_work" and class "container". Basically for INDUSTRIAL VISITS & WORKSHOPS */
+
+#visit_work.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+#visit_work > .row > .col-md-9 > h3{
+    float:right
+}
+#visit_work > .row > .col-md-9 > p{
+    float:right
