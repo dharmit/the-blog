@@ -1,0 +1,21 @@
+/* This CSS is only for the login.html page */
+
+/*.container > form > .username {
+    margin: 200px;
+    text-align: center;
+}
+.container > form > .password {
+    text-align: center;
+}*/
+
+.container > form{
+    margin: 150px;
+    text-align: center;
+}
+.container > form > div{
+    padding: 5px 5px 5px 5px;
+}
+
+.container > form > #submit{
+    margin: 5px 0px 0px 50px;
+}
